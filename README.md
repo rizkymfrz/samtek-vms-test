@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  <img src="https://ztqkpxgzltzslyptpado.supabase.co/storage/v1/object/public/Gif/demo.gif" width="800" alt="SAMTEK VMS Demo" />
+  <img src="demo.gif" width="800" alt="SAMTEK VMS Demo" />
 </p>
 
 ---
