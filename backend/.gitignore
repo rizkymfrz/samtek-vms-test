@@ -1,0 +1,3 @@
+﻿node_modules/
+logs/
+config/firebase-service-account.json

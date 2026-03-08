@@ -1,0 +1,19 @@
+logLevel: info
+logDestinations: [stdout]
+rtsp: yes
+rtspAddress: :8554
+readTimeout: 20s
+writeTimeout: 20s
+webrtc: yes
+webrtcAddress: :8889
+webrtcLocalUDPAddress: :8189
+webrtcLocalTCPAddress: :8189
+webrtcICEServers2:
+  - url: stun:stun.l.google.com:19302
+rtmp: no
+hls: no
+srt: no
+paths:
+  live:
+    runOnInit: ffmpeg -re -stream_loop -1 -i traffic.mp4 -c:v libx264 -preset ultrafast -tune zerolatency -bf 0 -profile:v baseline -an -f rtsp rtsp://localhost:$RTSP_PORT/$MTX_PATH
+    runOnInitRestart: yes
